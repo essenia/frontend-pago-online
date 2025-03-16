@@ -57,3 +57,51 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+<!-- ng g m @public/pages/home --routing -->
+<!-- ng g m @public/pages/contact --routing -->
+
+
+<!-- ignorar los test -->
+ <!-- ng g c public/pages/contact --skip-tests -->
+
+ <!-- Lazy loading para evitar que el navegador recargue la página -->
+
+Ruta comodín (path: '**)
+ ng g c public/pages/home --skip-tests
+RouterModule  => Usa routerLink para movernos entre rutas sin href.
+
+creación panel de Admin
+
+ng g m @admin/pages/dashboard --routing
+
+ ng g m @admin/pages/users --routing
+
+
+ng g c @admin/pages/dashboard --skip-tests
+ ng g c @admin/pages/users --skip-tests
+
+ rutas en dos templates 
+
+  ng g m @admin/pages/admin --flat --routing
+
+
+ ng g c @admin/pages/admin --flat --skip-tests
+
+
+
+ Cada vez que el usuario navega a una nueva ruta, el componente correspondiente se inyecta en el <router-outlet>, y su contenido es mostrado en la aplicación.
+ <router-outlet></router-outlet>
+Añadir las rutas hijas para acceder al contenido en su template
+
+creando   routas template parala carpeta public
+ng g m @public/pages/public --flat --routing
+
+ ng g c @public/pages/public --flat --skip-tests
+
+ ***crear repositorio git
+ git init
+  git remote add origin https://github.com/essenia/frontend-pago-online.git
+   git pull origin master
+    git merge origin/main
