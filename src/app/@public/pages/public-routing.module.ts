@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       
       {
-        path: 'home',
+        path: 'public',
         loadComponent: () =>
           import('./home/home.component').then((m) => m.HomeComponent), // Ruta hija con carga diferida  },
       },

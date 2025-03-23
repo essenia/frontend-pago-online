@@ -105,3 +105,26 @@ ng g m @public/pages/public --flat --routing
   git remote add origin https://github.com/essenia/frontend-pago-online.git
    git pull origin master
     git merge origin/main
+     git merge origin/main
+     gi add --all
+ git commit -m "configuración de las rutas templates"
+
+ git push origin master
+ git checkout -b 01-base-proyecto
+
+ git push origin 01-base-proyecto
+  git branch
+   gir push origin 01-base-proyecto
+
+
+    ng g c @admin/core/components/title/ --skip-tests
+//añadir el admin.module dentro del componente header
+     ng g c @admin/core/components/header/ --skip-tests --module=@admin/pages/admin.module.ts
+
+      ng g c @admin/core/components/sidebar/ --skip-tests --module=@admin/pages/admin.module.ts
+
+    //CommonModule te permite usar directivas estructurales y pipes en componentes que no están dentro del AppModule.
+    //CommonModule permite usar *ngIf, *ngFor, *ngSwitch, y pipes como | date en componentes standalone o módulos adicionales.
+ crear nueva rama 
+    git status
+    git add --all

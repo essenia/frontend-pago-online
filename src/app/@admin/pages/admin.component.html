@@ -1,23 +1,37 @@
 
 
-<h1>Admin</h1>
+<!-- <h1>Admin</h1>
 
 <ul>
     <li>
       <a routerLink="['/home']" routerLinkActive="router-link-active"> volver a Home </a>
-    </li>
+    </li> -->
     <!-- <li>
       <a routerLink="/contact" routerLinkActive="router-link-active">Contact </a>
     </li> -->
-    <li>
+    <!-- <li>
       <a routerLink="/admin" routerLinkActive="router-link-active">Dashboard </a>
     </li>
     <li>
       <a routerLink="/users" routerLinkActive="router-link-active">users </a>
   
     </li>
-  </ul>
+  </ul> -->
+  <div class="d-flex" id="wrapper">
+   <app-admin-sidebar *ngIf="toggledValue"></app-admin-sidebar>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+       
+        <app-admin-header (toggleChange)="toggled($event)"></app-admin-header>
+        <!-- Page content-->
+        <div class="container-fluid">
+          <app-admin-title></app-admin-title>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
 
 
 <!-- Aquí se renderizan las rutas hijas -->
-<router-outlet></router-outlet>
+

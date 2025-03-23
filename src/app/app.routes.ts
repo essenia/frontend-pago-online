@@ -10,6 +10,11 @@ import { ContactModule } from './@public/pages/contact/contact.module';
 import { Routes } from '@angular/router';
 import { AdminComponent } from './@admin/pages/admin.component';
 import { AdminModule } from './@admin/pages/admin.module';
+import { PublicComponent } from './@public/pages/public.component';
+import { SidebarComponent } from '../app/@admin/core/components/sidebar/sidebar.component';
+import { HeaderComponent } from '../app/@admin/core/components/header/header.component';
+
+
 // import { DashboardComponent } from './@admin/pages/dashboard/dashboard.component';
 
 export const routes: Routes = [
@@ -26,7 +31,8 @@ export const routes: Routes = [
 
   {
     path: 'home',
-    component: HomeComponent,
+    component: PublicComponent,
+   
   },
   {
     path: 'contact',
@@ -35,6 +41,7 @@ export const routes: Routes = [
   {
     path: 'admin',
     component: AdminComponent, ////  el componente principal de la ruta "admin"
+
     children: [
       {
         path: '', // Ruta vacía, es la ruta por defecto cuando se accede a "admin"
