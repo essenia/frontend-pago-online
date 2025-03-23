@@ -128,3 +128,9 @@ ng g m @public/pages/public --flat --routing
  crear nueva rama 
     git status
     git add --all
+    git status
+    // ver en qué rama estamos 
+    git branch
+     git commit -m "conversion de la plantilla Simple sideBar StartBootstrap en la plantilla del apartado del proyecto"
+     git push origin admin-tpl-adapt
+     git checkout master
